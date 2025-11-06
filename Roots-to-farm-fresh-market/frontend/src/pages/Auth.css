@@ -1,0 +1,375 @@
+/* Navbar.css */
+
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-auth-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-login-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: #2d5016;
+    border: 2px solid #2d5016;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.nav-login-btn:hover {
+    background: #2d5016;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.nav-signup-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #2d5016;
+    color: white;
+    border: 2px solid #2d5016;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.nav-signup-btn:hover {
+    background: #1f3710;
+    border-color: #1f3710;
+    transform: translateY(-1px);
+}
+
+.btn-icon {
+    font-size: 0.8rem;
+}
+
+
+/* Auth.css - Enhanced Version */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8fdf8 0%, #e8f5e8 100%);
+    padding: 2rem;
+}
+
+.auth-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 440px;
+    border: 1px solid #e8f5e8;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.auth-header h2 {
+    color: #1a3c0a;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+    z-index: 1;
+}
+
+.input-group input,
+.role-select {
+    width: 100%;
+    padding: 1rem 1rem 1rem 2.75rem;
+    border: 2px solid #e1e8e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.role-select {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.input-group input:focus,
+.role-select:focus {
+    outline: none;
+    border-color: #2d5016;
+    box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+}
+
+.password-toggle {
+    position: absolute;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #2d5016;
+}
+
+.btn-auth {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #2d5016;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.btn-auth:hover:not(:disabled) {
+    background: #1f3710;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(45, 80, 22, 0.2);
+}
+
+.btn-auth:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e8f5e8;
+}
+
+.auth-footer p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.auth-link {
+    color: #2d5016;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.auth-link:hover {
+    color: #1f3710;
+    text-decoration: underline;
+}
+
+.forgot-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.forgot-link:hover {
+    color: #2d5016;
+    text-decoration: underline;
+}
+
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.alert-error {
+    background: #fee;
+    color: #c33;
+    border: 1px solid #fdd;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .auth-card {
+        padding: 2rem;
+        margin: 1rem;
+    }
+    .nav-auth-buttons {
+        gap: 0.5rem;
+    }
+    .nav-login-btn,
+    .nav-signup-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 1rem;
+    }
+    .auth-card {
+        padding: 1.5rem;
+    }
+    .nav-auth-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
+/* Add these to your existing Auth.css */
+
+
+/* Enhanced Input Animations */
+
+.input-group input:focus,
+.role-select:focus {
+    outline: none;
+    border-color: #2d5016;
+    box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1), 0 4px 12px rgba(45, 80, 22, 0.08);
+    transform: translateY(-1px);
+}
+
+
+/* Input focus icon color change */
+
+.input-group:focus-within .input-icon {
+    color: #2d5016;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+
+/* Button Loading Animation */
+
+.btn-auth:disabled {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-auth:disabled::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: loading-shine 1.5s ease-in-out infinite;
+}
+
+@keyframes loading-shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+/* Form transition effects */
+
+.auth-card {
+    animation: card-appear 0.6s ease-out;
+}
+
+@keyframes card-appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Success state for inputs */
+
+.input-group input:valid {
+    border-color: #4CAF50;
+}
+
+
+/* Enhanced password toggle */
+
+.password-toggle {
+    transition: all 0.3s ease;
+}
+
+.password-toggle:hover {
+    background: rgba(45, 80, 22, 0.1);
+    transform: scale(1.1);
+}
